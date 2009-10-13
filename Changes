@@ -37,7 +37,7 @@ This version kept in step with `MooseX::Types::Locale::Language` 0.003.
 
 -   Added several author tests.
 
--   Added coverage checking script `coverage.sh`
+-   Added coverage checking scripts `coverage.sh`
     (and `coverage.bat` for MS Windows).
 
 ### Documents
