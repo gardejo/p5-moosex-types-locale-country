@@ -1,0 +1,84 @@
+This file documents the revision history for Perl distribution
+`MooseX-Types-Locale-Country`.
+
+
+VERSION HISTORY
+===============
+
+0.000 : Released on 2009-10-14 (JST)
+------------------------------------
+
+Initial version.
+
+This version kept in step with `MooseX::Types::Locale::Language` 0.003.
+
+### Features
+
+#### `MooseX::Types::Locale::Country`
+
+-   Implemented `MooseX::Types::Locale::Country`,
+    which packages several `Moose::Util::TypeConstraints` with coercions,
+    designed to work with the values of `Locale::Country`.
+
+-   Exported function name is `CountryCode`, `Alpha2Country`, `Alpha3Country`,
+    `NumericCountry`, and `CountryName`.
+
+#### `MooseX::Types::Locale::Country::Fast`
+
+-   Also implemented `MooseX::Types::Locale::Country::Fast`,
+    which provides only constraints, without coercions.
+
+-   Exported function name is same as above.
+
+### Tests
+
+-   Prepared tests for `MooseX::Types::Locale::Country`
+    and `MooseX::Types::Locale::Country::Fast`.
+
+-   Added several author tests.
+
+-   Added coverage checking script `coverage.sh`
+    (and `coverage.bat` for MS Windows).
+
+### Documents
+
+-   Prepared minimal documents.
+
+-   Prepared minimal examples.
+
+
+META INFORMATION
+================
+
+Version notation
+----------------
+
+    V.vvv_rrr : Released on YYYY-MM-DD
+
+### V  : Major version number
+
+-   Added ambitious feature(s)
+-   Changed in API(s)
+-   ...
+
+### vvv : Minor version number (in major version)
+
+-   Added several feature(s)
+-   Improved any feature(s)
+-   Fixed bug(s)
+-   Improved test(s)
+-   Updated document(s)
+-   ...
+
+### rrr : Revision number (in minor version, on demand)
+
+-   A developer release
+
+
+Document format
+---------------
+
+This `Changes` file was formatted in Markdown.
+
+    $ perl -MText::Markdown -MFile::Slurp -e \\
+      'print (Text::Markdown->new->markdown(scalar read_file(q{Changes})));'
