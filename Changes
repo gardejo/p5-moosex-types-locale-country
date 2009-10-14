@@ -10,7 +10,9 @@ VERSION HISTORY
 
 ### Others
 
--   Changed the bugtracker URI on Makefile.PL from GitHub to CPAN RT
+-   Changed the bugtracker URI on Makefile.PL from GitHub to CPAN RT.
+
+-   Removed nonexistent `coverage` file from `MANIFEST`.
 
 
 0.000 : Released on 2009-10-14 (JST)
