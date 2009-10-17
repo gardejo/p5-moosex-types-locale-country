@@ -5,8 +5,19 @@ This file documents the revision history for Perl distribution
 VERSION HISTORY
 ===============
 
-0.001 : Released on 2009-10-XX (JST)
-------------------------------------
+0.0001 : Released on 2009-10-XX (JST)
+-------------------------------------
+
+### Documents
+
+#### `MooseX::Types::Locale::Country`
+
+-   Refered to `/examples/complex.pl` to explain that code conversion is not
+    supported.
+
+#### `Changes`
+
+-   Modified version notation to explain guide of upgrade.
 
 ### Others
 
@@ -19,6 +30,8 @@ VERSION HISTORY
 ------------------------------------
 
 Initial version.
+
+(Regarded as version 0.00)
 
 This version kept in step with `MooseX::Types::Locale::Language` 0.003.
 
@@ -62,27 +75,37 @@ META INFORMATION
 
 Version notation
 ----------------
-
-    V.vvv_rrr : Released on YYYY-MM-DD
+    V.vvrr_dd : Released on YYYY-MM-DD
 
 ### V  : Major version number
 
--   Added ambitious feature(s)
--   Changed in API(s)
+-   Added ambitious features
+-   Changed in APIs
+    (older API will be keeped to compatibility for a some period)
 -   ...
 
-### vvv : Minor version number (in major version)
+### vv : Minor version number (in major version)
 
--   Added several feature(s)
--   Improved any feature(s)
--   Fixed bug(s)
--   Improved test(s)
--   Updated document(s)
+-   Added several features
+-   Improved any features
+-   Fixed bugs
 -   ...
 
-### rrr : Revision number (in minor version, on demand)
+### rr : Revision number (in minor version, on demand)
 
--   A developer release
+You would not need to update the distribution.
+
+-   Improved tests
+-   Updated documents
+
+### dd : Developer release number (in revision number, on demand)
+
+This is unstable version.
+Unless you are a developer, You will not be recommended to upgrade
+the distribution.
+
+-   Added experimental features
+-   Fixed bugs provisionally
 
 
 Document format
