@@ -7,7 +7,7 @@ package MooseX::Types::Locale::Country::Fast;
 
 use 5.008_001;
 # MooseX::Types turns strict/warnings pragmas on,
-# however, kwalitee can not detect such mechanism.
+# however, kwalitee scorer can not detect such mechanism.
 # (Perl::Critic can it, with equivalent_modules parameter)
 use strict;
 use warnings;

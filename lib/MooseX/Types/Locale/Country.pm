@@ -7,7 +7,7 @@ package MooseX::Types::Locale::Country;
 
 use 5.008_001;
 # MooseX::Types turns strict/warnings pragmas on,
-# however, kwalitee can not detect such mechanism.
+# however, kwalitee scorer can not detect such mechanism.
 # (Perl::Critic can it, with equivalent_modules parameter)
 use strict;
 use warnings;
@@ -242,6 +242,25 @@ For example, C<'JAPAN'> will convert to C<'Japan'>.
 
 =back
 
+=head1 NOTE
+
+=head2 Code conversion is not supported
+
+These coercions is not support code conversion.
+For example, from C<Alpha2Country> to C<Alpha3Country>.
+
+    has country
+        => ( is => 'rw', isa => Alpha2Country, coerce => 1 );
+
+    ...
+
+    $foo->country('US');    # does not convert to 'USA'
+
+If you want conversion, could you implement an individual country class
+with several attributes?
+
+See see C</examples/complex.pl> in the distribution for more details.
+
 =head1 SEE ALSO
 
 =over 4
@@ -257,6 +276,19 @@ For example, C<'JAPAN'> will convert to C<'Japan'>.
 =head1 INCOMPATIBILITIES
 
 None reported.
+
+=head1 TO DO
+
+=over 4
+
+=item * I may add grammatical aliases of constraints/coercions.
+        For example, C<CountryAsAlpha2> as existent C<Alpha2Country>.
+
+=item * I may add namespased types.
+        For example, C<'Locale::Country::Alpha2'> as export type
+        C<Alpha2Country>.
+
+=back
 
 =head1 BUGS AND LIMITATIONS
 
