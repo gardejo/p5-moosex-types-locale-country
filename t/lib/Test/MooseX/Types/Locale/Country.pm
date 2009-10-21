@@ -138,7 +138,7 @@ This module tests L<MooseX::Types::Locale::Country>.
 
 =item MORIYA Masaki ("Gardejo")
 
-C<< <moriya at ermitejo dot com> >>,
+C<< <moriya@cpan.org> >>,
 L<http://ttt.ermitejo.com/>
 
 =back

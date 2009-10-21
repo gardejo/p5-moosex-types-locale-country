@@ -144,7 +144,7 @@ L<git://github.com/gardejo/p5-moosex-types-locale-country.git>.
 
 =item MORIYA Masaki ("Gardejo")
 
-C<< <moriya at ermitejo dot com> >>,
+C<< <moriya@cpan.org> >>,
 L<http://ttt.ermitejo.com/>
 
 =back
