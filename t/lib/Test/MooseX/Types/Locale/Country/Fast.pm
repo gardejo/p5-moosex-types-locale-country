@@ -66,7 +66,7 @@ use Test::More;
 sub test_use : Tests(1) {
     my $self = shift;
 
-    use_ok 'Test::MooseX::Types::Locale::Country::Fast';
+    use_ok 'MooseX::Types::Locale::Country::Fast';
 
     return;
 }
