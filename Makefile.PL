@@ -14,7 +14,7 @@ my $application_root_module = 'lib/MooseX/Types/Locale/Country.pm';
 all_from        $application_root_module;
 
 # supplement
-author          'MORIYA Masaki (a.k.a. Gardejo) <moriya@cpan.org>';
+author          'MORIYA Masaki (a.k.a. Gardejo) <moriya at cpan dot org>';
 resources (
     repository
         => 'git://github.com/gardejo/p5-moosex-types-locale-country.git',
@@ -91,7 +91,7 @@ Makefile.PL - Makefile builder for MooseX-Types-Locale-Country
 
 =item MORIYA Masaki (a.k.a. Gardejo)
 
-C<< <moriya@cpan.org> >>,
+C<< <moriya at cpan dot org> >>,
 L<http://ttt.ermitejo.com/>
 
 =back
