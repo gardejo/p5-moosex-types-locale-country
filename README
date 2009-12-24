@@ -21,7 +21,7 @@ by the following command:
 DEPENDENCIES
 ------------
 
-See C<Makefile.PL>.
+See Makefile.PL
 
 DESCRIPTION
 -----------
@@ -37,13 +37,14 @@ AUTHOR
 
 MORIYA Masaki (a.k.a. Gardejo)
 
-    <moriya@cpan.org>, http://ttt.ermitejo.com/
+    <moriya@cpan.org>,
+    http://ttt.ermitejo.com/
 
 COPYRIGHT AND LICENSE
 ---------------------
 
 Copyright (c) 2009 by MORIYA Masaki (a.k.a. Gardejo),
-L<http://ttt.ermitejo.com>.
+http://ttt.ermitejo.com
 
 This library is free software;
 you can redistribute it and/or modify it under the same terms as Perl itself.
