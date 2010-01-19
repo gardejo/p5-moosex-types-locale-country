@@ -46,7 +46,7 @@ our $VERSION = "0.000";
 # private class variable(s)
 # ****************************************************************
 
-# Because code2country($_) cannot coerce 'JA' to 'ja'.
+# Because code2country($_) cannot coerce 'JP' to 'jp'.
 my %alpha2;
 @alpha2{ map { uc } all_country_codes(LOCALE_CODE_ALPHA_2) } = ();
 
@@ -216,7 +216,7 @@ designed to work with the values of L<Locale::Country>.
 A subtype of C<Str>, which should be defined in country code of ISO 3166-1
 alpha-2.
 If you turned C<coerce> on, C<Str> will be upper-case.
-For example, C<'ja'> will convert to C<'JA'>.
+For example, C<'jp'> will convert to C<'JP'>.
 
 =item C<CountryCode>
 
