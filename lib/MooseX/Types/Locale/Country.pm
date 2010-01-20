@@ -144,6 +144,19 @@ coerce CountryName,
 
 
 # ****************************************************************
+# optionally add Getopt option type
+# ****************************************************************
+
+eval { require MooseX::Getopt; };
+if (!$@) {
+    MooseX::Getopt::OptionTypeMap->add_option_type_to_map( $_, '=s', )
+        for (CountryCode, Alpha2Country, Alpha3Country, CountryName);
+    MooseX::Getopt::OptionTypeMap->add_option_type_to_map( $_, '=i', )
+        for (NumericCountry);
+}
+
+
+# ****************************************************************
 # return true
 # ****************************************************************
 
@@ -261,6 +274,17 @@ If you want conversion, could you implement an individual country class
 with several attributes?
 
 See C</examples/complex.pl> in the distribution for more details.
+
+=head2 The type mapping of L<MooseX::Getopt|MooseX::Getopt>
+
+This module provides the optional type mapping of
+L<MooseX::Getopt|MooseX::Getopt>
+when L<MooseX::Getopt|MooseX::Getopt> was installed.
+
+C<CountryCode>, C<Alpha2Country>, C<Alpha3Country> and C<CountryName> are
+C<String> (C<"=s">) type.
+
+C<NumericCountry> is C<Int> (C<"=i">) type.
 
 =head1 SEE ALSO
 

@@ -100,6 +100,20 @@ subtype CountryName,
             "Specified country name does not exist in ISO 3166-1";
         };
 
+
+# ****************************************************************
+# optionally add Getopt option type
+# ****************************************************************
+
+eval { require MooseX::Getopt; };
+if (!$@) {
+    MooseX::Getopt::OptionTypeMap->add_option_type_to_map( $_, '=s', )
+        for (CountryCode, Alpha2Country, Alpha3Country, CountryName);
+    MooseX::Getopt::OptionTypeMap->add_option_type_to_map( $_, '=i', )
+        for (NumericCountry);
+}
+
+
 # ****************************************************************
 # return true
 # ****************************************************************
@@ -197,6 +211,19 @@ numeric.
 A subtype of C<Str>, which should be defined in ISO 3166-1 country name.
 
 =back
+
+=head1 NOTE
+
+=head2 The type mapping of L<MooseX::Getopt|MooseX::Getopt>
+
+This module provides the optional type mapping of
+L<MooseX::Getopt|MooseX::Getopt>
+when L<MooseX::Getopt|MooseX::Getopt> was installed.
+
+C<CountryCode>, C<Alpha2Country>, C<Alpha3Country> and C<CountryName> are
+C<String> (C<"=s">) type.
+
+C<NumericCountry> is C<Int> (C<"=i">) type.
 
 =head1 SEE ALSO
 
