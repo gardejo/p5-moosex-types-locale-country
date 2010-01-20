@@ -260,7 +260,7 @@ For example, from C<Alpha2Country> to C<Alpha3Country>.
 If you want conversion, could you implement an individual country class
 with several attributes?
 
-See see C</examples/complex.pl> in the distribution for more details.
+See C</examples/complex.pl> in the distribution for more details.
 
 =head1 SEE ALSO
 
