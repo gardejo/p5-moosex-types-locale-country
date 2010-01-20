@@ -324,7 +324,7 @@ No bugs have been reported.
 Please report any found bugs, feature requests, and ideas for improvements
 to C<bug-moosex-types-locale-country at rt.cpan.org>,
 or through the web interface
-at L<http://rt.cpan.org/Public/Dist/Display.html?Name=MooseX-Types-Locale-Country>.
+at L<http://rt.cpan.org/Public/Bug/Report.html?Queue=MooseX-Types-Locale-Country>.
 
 I will be notified, and then you'll automatically be notified of progress
 on your bugs/requests as I make changes.
@@ -358,7 +358,7 @@ L<http://search.cpan.org/dist/MooseX-Types-Locale-Country>
 
 =item CPAN Ratings
 
-L<http://cpanratings.perl.org/d/MooseX-Types-Locale-Country>
+L<http://cpanratings.perl.org/dist/MooseX-Types-Locale-Country>
 
 =back
 

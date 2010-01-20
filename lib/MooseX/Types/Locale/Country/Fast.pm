@@ -271,7 +271,7 @@ You can also look for information at:
 
 =item RT: CPAN's request tracker
 
-L<http://rt.cpan.org/Public/Bug/Report.html?Queue=MooseX-Types-Locale-Country>
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=MooseX-Types-Locale-Country>
 
 =item AnnoCPAN: Annotated CPAN documentation
 
@@ -283,7 +283,7 @@ L<http://search.cpan.org/dist/MooseX-Types-Locale-Country>
 
 =item CPAN Ratings
 
-L<http://cpanratings.perl.org/d/MooseX-Types-Locale-Country>
+L<http://cpanratings.perl.org/dist/MooseX-Types-Locale-Country>
 
 =back
 
