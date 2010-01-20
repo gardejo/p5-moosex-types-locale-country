@@ -118,17 +118,18 @@ Test::MooseX::Types::Locale::Country::Fast - Testing subclass for MooseX::Types:
 
 =head1 DESCRIPTION
 
-This module tests L<MooseX::Types::Locale::Country::Fast>.
+This module tests
+L<MooseX::Types::Locale::Country::Fast|MooseX::Types::Locale::Country::Fast>.
 
 =head1 SEE ALSO
 
 =over 4
 
-=item * L<MooseX::Types::Locale::Country::Fast>
+=item * L<MooseX::Types::Locale::Country::Fast|MooseX::Types::Locale::Country::Fast>
 
-=item * L<Test::MooseX::Types::Locale::Country::Base>
+=item * L<Test::MooseX::Types::Locale::Country::Base|Test::MooseX::Types::Locale::Country::Base>
 
-=item * L<Test::MooseX::Types::Locale::Country>
+=item * L<Test::MooseX::Types::Locale::Country|Test::MooseX::Types::Locale::Country>
 
 =back
 
@@ -152,7 +153,7 @@ L<http://ttt.ermitejo.com/>
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (c) 2009 by MORIYA Masaki (a.k.a. Gardejo),
-L<http://ttt.ermitejo.com>.
+L<http://ttt.ermitejo.com/>.
 
 This library is free software;
 you can redistribute it and/or modify it under the same terms as Perl itself.
