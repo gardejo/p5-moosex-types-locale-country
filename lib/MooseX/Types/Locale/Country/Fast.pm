@@ -56,8 +56,10 @@ foreach my $subtype (CountryCode, Alpha2Country) {
                 code2country($_, LOCALE_CODE_ALPHA_2);
             },
             message {
-                "Validation failed for code failed with value ($_) because: " .
-                "Specified country code does not exist in ISO 3166-1 alpha-2";
+                sprintf 'Validation failed for code failed with value (%s) '
+                      . 'because specified country code does not exist '
+                      . 'in ISO 3166-1 alpha-2',
+                    defined $_ ? $_ : q{};
             };
 }
 
@@ -70,8 +72,10 @@ subtype Alpha3Country,
             code2country($_, LOCALE_CODE_ALPHA_3);
         },
         message {
-            "Validation failed for code failed with value ($_) because: " .
-            "Specified country code does not exist in ISO 3166-1 alpha-3";
+            sprintf 'Validation failed for code failed with value (%s) '
+                  . 'because specified country code does not exist '
+                  . 'in ISO 3166-1 alpha-3',
+                defined $_ ? $_ : q{};
         };
 
 # ----------------------------------------------------------------
@@ -83,8 +87,10 @@ subtype NumericCountry,
             code2country($_, LOCALE_CODE_NUMERIC);
         },
         message {
-            "Validation failed for code failed with value ($_) because: " .
-            "Specified country code does not exist in ISO 3166-1 numeric";
+            sprintf 'Validation failed for code failed with value (%s) '
+                  . 'because specified country code does not exist '
+                  . 'in ISO 3166-1 numeric',
+                defined $_ ? $_ : q{};
         };
 
 # ----------------------------------------------------------------
@@ -96,8 +102,10 @@ subtype CountryName,
             country2code($_);
         },
         message {
-            "Validation failed for name failed with value ($_) because: " .
-            "Specified country name does not exist in ISO 3166-1";
+            sprintf 'Validation failed for name failed with value (%s) '
+                  . 'because specified country name does not exist '
+                  . 'in ISO 3166-1',
+                defined $_ ? $_ : q{};
         };
 
 
