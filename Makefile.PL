@@ -82,7 +82,7 @@ use Module::Install::AuthorTests;
 # installation
 # ================================================================
 #   auto_install;
-    # 'auto_include' is deprecated
+    # 'auto_install' is deprecated
 
 # ================================================================
 # writter
