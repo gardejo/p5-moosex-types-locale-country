@@ -164,7 +164,7 @@ L<MooseX::Types::Locale::Country::Fast|MooseX::Types::Locale::Country::Fast>.
 =item MORIYA Masaki, alias Gardejo
 
 C<< <moriya at cpan dot org> >>,
-L<http://ttt.ermitejo.com/>
+L<http://gardejo.org/>
 
 =back
 
