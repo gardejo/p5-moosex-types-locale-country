@@ -39,7 +39,7 @@ use namespace::clean;
 # public class variable(s)
 # ****************************************************************
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 
 # ****************************************************************
@@ -139,6 +139,12 @@ __END__
 =head1 NAME
 
 MooseX::Types::Locale::Country::Fast - Locale::Country related constraints for Moose (without coercions)
+
+=head1 VERSION
+
+This document describes
+L<MooseX::Types::Locale::Country::Fast|MooseX::Types::Locale::Country::Fast>
+version C<0.03>.
 
 =head1 SYNOPSIS
 
