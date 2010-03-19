@@ -5,6 +5,25 @@ This file documents the revision history for Perl distribution
 VERSION HISTORY
 ===============
 
+0.04 : Released on 2010-03-20 (JST)
+-----------------------------------
+
+Codes have no changes.
+
+### Bug fixes
+
+#### Packaging
+
+-   Resolve superfluous dependencies on test related module `mro`.
+    It is concerned with RT #55482.
+
+### Refactoring
+
+#### Packaging
+
+-   Refactor `Makefile.PL`.
+
+
 0.03 : Released on 2010-03-19 (JST)
 -----------------------------------
 
