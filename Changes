@@ -14,8 +14,9 @@ Codes have no changes.
 
 #### Packaging
 
--   Resolve superfluous dependencies on test related module `mro`.
-    It is concerned with RT #55482.
+-   Remove superfluous dependency `mro` which related to `Test::Class`
+    (`MRO::Compat`).
+    This problem is concerned with RT #55482.
 
 ### Refactoring
 
