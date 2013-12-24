@@ -39,7 +39,7 @@ use namespace::clean;
 # public class variable(s)
 # ****************************************************************
 
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 
 
 # ****************************************************************
@@ -144,7 +144,7 @@ MooseX::Types::Locale::Country::Fast - Locale::Country related constraints for M
 
 This document describes
 L<MooseX::Types::Locale::Country::Fast|MooseX::Types::Locale::Country::Fast>
-version C<0.04>.
+version C<0.05>.
 
 =head1 SYNOPSIS
 
