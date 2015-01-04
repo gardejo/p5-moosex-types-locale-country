@@ -193,7 +193,7 @@ This module packages several
 L<Moose::Util::TypeConstraints|Moose::Util::TypeConstraints>,
 designed to work with the values of L<Locale::Country|Locale::Country>.
 
-This module does not provide you coercions.
+This module does not provide coercions.
 Therefore, it works faster than
 L<MooseX::Types::Locale::Country|MooseX::Types::Locale::Country>.
 
@@ -203,8 +203,8 @@ L<MooseX::Types::Locale::Country|MooseX::Types::Locale::Country>.
 
 =item C<Alpha2Country>
 
-A subtype of C<Str>, which should be defined in country code of ISO 639-1
-alpha-2.
+A subtype of C<Str>, which should be a two-letter country code defined
+in ISO 3166-1 alpha-2.
 
 =item C<CountryCode>
 
@@ -212,17 +212,17 @@ Alias of C<Alpha2Country>.
 
 =item C<Alpha3Country>
 
-A subtype of C<Str>, which should be defined in country code of ISO 3166-1
-alpha-3.
+A subtype of C<Str>, which should be a three-letter country code defined
+in ISO 3166-1 alpha-3.
 
 =item C<NumericCountry>
 
-A subtype of C<Int>, which should be defined in country code of ISO 3166-1
-numeric.
+A subtype of C<Int>, which should be a three-digit country code defined
+in ISO 3166-1 numeric.
 
 =item C<CountryName>
 
-A subtype of C<Str>, which should be defined in ISO 3166-1 country name.
+A subtype of C<Str>, which should be a country name defined in ISO 3166-1.
 
 =back
 
@@ -231,8 +231,7 @@ A subtype of C<Str>, which should be defined in ISO 3166-1 country name.
 =head2 The type mapping of L<MooseX::Getopt|MooseX::Getopt>
 
 This module provides the optional type mapping of
-L<MooseX::Getopt|MooseX::Getopt>
-when L<MooseX::Getopt|MooseX::Getopt> was installed.
+L<MooseX::Getopt|MooseX::Getopt> if that module is installed.
 
 C<CountryCode>, C<Alpha2Country>, C<Alpha3Country> and C<CountryName> are
 C<String> (C<"=s">) type.

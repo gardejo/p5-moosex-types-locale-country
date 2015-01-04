@@ -241,8 +241,8 @@ designed to work with the values of L<Locale::Country|Locale::Country>.
 
 =item C<Alpha2Country>
 
-A subtype of C<Str>, which should be defined in country code of ISO 3166-1
-alpha-2.
+A subtype of C<Str>, which should be a two-letter country code defined
+in ISO 3166-1 alpha-2.
 If you turned C<coerce> on, C<Str> will be upper-case.
 For example, C<'jp'> will convert to C<'JP'>.
 
@@ -252,19 +252,19 @@ Alias of C<Alpha2Country>.
 
 =item C<Alpha3Country>
 
-A subtype of C<Str>, which should be defined in country code of ISO 3166-1
-alpha-3.
+A subtype of C<Str>, which should be a three-letter country code defined
+in ISO 3166-1 alpha-3.
 If you turned C<coerce> on, C<Str> will be upper-case.
 For example, C<'jpn'> will convert to C<'JPN'>.
 
 =item C<NumericCountry>
 
-A subtype of C<Int>, which should be defined in country code of ISO 3166-1
-numeric.
+A subtype of C<Int>, which should be a three-digit country code defined
+in ISO 3166-1 numeric.
 
 =item C<CountryName>
 
-A subtype of C<Str>, which should be defined in ISO 3166-1 country name.
+A subtype of C<Str>, which should be a country name defined in ISO 3166-1.
 If you turned C<coerce> on, C<Str> will be same case as canonical name.
 For example, C<'JAPAN'> will convert to C<'Japan'>.
 
@@ -274,26 +274,25 @@ For example, C<'JAPAN'> will convert to C<'Japan'>.
 
 =head2 Code conversion is not supported
 
-These coercions is not support code conversion.
+These coercions do not support code conversion.
 For example, from C<Alpha2Country> to C<Alpha3Country>.
 
     has country
-        => ( is => 'rw', isa => Alpha2Country, coerce => 1 );
+        => ( is => 'rw', isa => Alpha3Country, coerce => 1 );
 
     ...
 
     $foo->country('US');    # does not convert to 'USA'
 
-If you want conversion, could you implement an individual country class
-with several attributes?
+If you want conversion, you can implement an individual country class
+with several attributes.
 
-See C</examples/complex.pl> in the distribution for more details.
+See C</examples/complex.pl> in the distribution for details.
 
 =head2 The type mapping of L<MooseX::Getopt|MooseX::Getopt>
 
-This module provides you the optional type mapping of
-L<MooseX::Getopt|MooseX::Getopt>
-when L<MooseX::Getopt|MooseX::Getopt> was installed.
+This module provides the optional type mapping of
+L<MooseX::Getopt|MooseX::Getopt> if that module is installed.
 
 C<CountryCode>, C<Alpha2Country>, C<Alpha3Country> and C<CountryName> are
 C<String> (C<"=s">) type.
